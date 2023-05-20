@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="Plugin.cs" company="Build">
 // Copyright (c) Build. All rights reserved.
 // Licensed under the CC BY-SA 3.0 license.
@@ -26,7 +26,7 @@ namespace ScpSwap
         public static Plugin Instance { get; private set; }
 
         /// <inheritdoc />
-        public override string Author => "DentyTxR";
+        public override string Author => "DentyTxR & Creet1724 fix";
 
         /// <inheritdoc />
         public override string Name => "ScpSwap";
