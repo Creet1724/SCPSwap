@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="Config.cs" company="Build">
 // Copyright (c) Build. All rights reserved.
 // Licensed under the CC BY-SA 3.0 license.
@@ -50,6 +50,18 @@ namespace ScpSwap
         {
             RoleTypeId.Scp0492,
         };
+
+        /// <summary>
+        /// Gets or sets a value indicating whether zombies should be able to swap to other SCPs.
+        /// </summary>
+        [Description("Allows/Disallows SCP-049-2 from swapping to other SCPs.")]
+        public bool ZombieSwapping { get; set; } = false;
+
+        /// <summary>
+        /// Gets or sets the message to display to the players when they are a zombie and trying to swap.
+        /// </summary>
+        [Description("Allows/Disallows SCP-049-2 from swapping to other SCPs.")]
+        public string ZombieSwappingDisallowMessage { get; set; } = "So, you are a zombie, you can't swap with another SCP. (fixed by Creet1724)";
 
         /// <summary>
         /// Gets or sets a collection of the names of custom scps blacklisted from being swapped to. This must match the name the developer integrated the SCP into this plugin's API with.
