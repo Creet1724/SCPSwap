@@ -1,4 +1,4 @@
-## ScpSwap
+## SCPSwap
 
 ##### This was originally [BuildBoy12](https://github.com/BuildBoy12-SL/ScpSwap) version
 ##### I may maintain this plugin if I get his permission
@@ -22,6 +22,10 @@ ScpSwap:
   # A collection of roles blacklisted from being swapped to.
   blacklisted_scps:
   - Scp0492
+  # Allows/Disallows SCP-049-2 from swapping to other SCPs.
+  zombie_swapping: false
+  # Allows/Disallows SCP-049-2 from swapping to other SCPs.
+  zombie_swapping_disallow_message: So, you are a zombie, you can't swap with another SCP. (fixed by Creet1724)
   # A collection of the names of custom scps blacklisted from being swapped to. This must match the name the developer integrated the SCP into this plugin's API with.
   blacklisted_names: []
 ```
