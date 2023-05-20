@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="EventHandlers.cs" company="Build">
 // Copyright (c) Build. All rights reserved.
 // Licensed under the CC BY-SA 3.0 license.
@@ -8,9 +8,9 @@
 namespace ScpSwap
 {
     using Exiled.API.Features;
-    using Exiled.Events.EventArgs;
     using Exiled.Events.EventArgs.Player;
     using MEC;
+    using PlayerRoles;
     using ScpSwap.Models;
 
     /// <summary>
@@ -34,6 +34,9 @@ namespace ScpSwap
 
             Timing.CallDelayed(0.1f, () =>
             {
+                if (ev.Player.Role.Type == RoleTypeId.Scp0492 && !Plugin.Instance.Config.ZombieSwapping)
+                    return;
+
                 if ((ev.Player.IsScp || ValidSwaps.GetCustom(ev.Player) != null) &&
                     Round.ElapsedTime.TotalSeconds < plugin.Config.SwapTimeout)
                     ev.Player.Broadcast(plugin.Translation.StartMessage);
