@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="ScpSwapParent.cs" company="Build">
 // Copyright (c) Build. All rights reserved.
 // Licensed under the CC BY-SA 3.0 license.
@@ -76,7 +76,13 @@ namespace ScpSwap.Commands
 
             if (!playerSender.IsScp && ValidSwaps.GetCustom(playerSender) == null)
             {
-                response = "You must be an Scp to use this command.";
+                response = "You must be an SCP to use this command.";
+                return false;
+            }
+
+            if (playerSender.Role.Type == RoleTypeId.Scp0492 && !Plugin.Instance.Config.ZombieSwapping)
+            {
+                response = Plugin.Instance.Config.ZombieSwappingDisallowMessage;
                 return false;
             }
 
