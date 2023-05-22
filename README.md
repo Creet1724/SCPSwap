@@ -1,4 +1,8 @@
-# SCPSwap
+<div align = center>
+
+# SCPSwap <br>![PRs](https://badgen.net/github/open-prs/Creet1724/SCPSwap?cache=900) ![Forks](https://badgen.net/github/forks/Creet1724/SCPSwap?cache=900) ![Contributors](https://badgen.net/github/contributors/Creet1724/SCPSwap?cache=900)
+  
+</div>
 
 ### How do I download this?
   - Go here and download the latest release, https://github.com/Creet1724/SCPSwap/releases
