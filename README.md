@@ -1,11 +1,7 @@
-## SCPSwap
-
-##### This was originally [BuildBoy12](https://github.com/BuildBoy12-SL/ScpSwap) version
-##### I may maintain this plugin if I get his permission
-
+# SCPSwap
 
 ### How do I download this?
-  - Go here and download the latest release, https://github.com/DentyTxR/ScpSwap/releases
+  - Go here and download the latest release, https://github.com/Creet1724/SCPSwap/releases
 
 ### Default Config
 ```yml
