@@ -1,6 +1,6 @@
 <div align = center>
 
-# SCPSwap <br>![PRs](https://badgen.net/github/open-prs/Creet1724/SCPSwap?cache=900) ![Forks](https://badgen.net/github/forks/Creet1724/SCPSwap?cache=900) ![Contributors](https://badgen.net/github/contributors/Creet1724/SCPSwap?cache=900)
+# SCPSwap <br>![Issues](https://badgen.net/github/issues/Creet1724/SCPSwap) ![PRs](https://badgen.net/github/open-prs/Creet1724/SCPSwap?cache=900) ![Forks](https://badgen.net/github/forks/Creet1724/SCPSwap?cache=900) ![Contributors](https://badgen.net/github/contributors/Creet1724/SCPSwap?cache=900)
   
 </div>
 
