@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScpSwap</name>
+    </assembly>
+    <members>
+        <member name="T:ScpSwap.Commands.Accept">
+            <summary>
+            Accepts an active swap request.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Commands.Accept.Command">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.Accept.Aliases">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.Accept.Description">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Commands.Accept.Execute(System.ArraySegment{System.String},CommandSystem.ICommandSender,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:ScpSwap.Commands.Cancel">
+            <summary>
+            Cancels an active swap request.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Commands.Cancel.Command">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.Cancel.Aliases">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.Cancel.Description">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Commands.Cancel.Execute(System.ArraySegment{System.String},CommandSystem.ICommandSender,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:ScpSwap.Commands.Decline">
+            <summary>
+            Rejects an active swap request.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Commands.Decline.Command">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.Decline.Aliases">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.Decline.Description">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Commands.Decline.Execute(System.ArraySegment{System.String},CommandSystem.ICommandSender,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:ScpSwap.Commands.List">
+            <summary>
+            Lists all valid swappable roles.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Commands.List.Command">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.List.Aliases">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.List.Description">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Commands.List.Execute(System.ArraySegment{System.String},CommandSystem.ICommandSender,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:ScpSwap.Commands.ScpSwapParent">
+            <summary>
+            The base command for ScpSwapParent.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Commands.ScpSwapParent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScpSwap.Commands.ScpSwapParent"/> class.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Commands.ScpSwapParent.Command">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.ScpSwapParent.Aliases">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Commands.ScpSwapParent.Description">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Commands.ScpSwapParent.LoadGeneratedCommands">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Commands.ScpSwapParent.ExecuteParent(System.ArraySegment{System.String},CommandSystem.ICommandSender,System.String@)">
+            <inheritdoc />
+        </member>
+        <member name="T:ScpSwap.Config">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Config.IsEnabled">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Config.Debug">
+            <summary>
+            Gets or sets a value indicating whether debug messages should be shown.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.RequestTimeout">
+            <summary>
+            Gets or sets the duration, in seconds, before a swap request gets automatically deleted.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.SwapTimeout">
+            <summary>
+            Gets or sets the duration, in seconds, after the round starts that swap requests can be sent.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.AllowNewScps">
+            <summary>
+            Gets or sets a value indicating whether a player can switch to a class if there is nobody playing as it.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.AllowInitiatorDamage">
+            <summary>
+            Gets or sets a value indicating whether a player can swap to another SCP if the initiator has taken damage.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.AllowReceiverDamage">
+            <summary>
+            Gets or sets a value indicating whether a player can swap to another SCP if the receiver has taken damage.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.BlacklistedScps">
+            <summary>
+            Gets or sets a collection of roles blacklisted from being swapped to.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.ZombieSwapping">
+            <summary>
+            Gets or sets a value indicating whether zombies should be able to swap to other SCPs.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.ZombieSwappingDisallowMessage">
+            <summary>
+            Gets or sets the message to display to the players when they are a zombie and trying to swap.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Config.BlacklistedNames">
+            <summary>
+            Gets or sets a collection of the names of custom scps blacklisted from being swapped to. This must match the name the developer integrated the SCP into this plugin's API with.
+            </summary>
+        </member>
+        <member name="T:ScpSwap.Configs.CommandTranslations">
+            <summary>
+            Contains configs for the various command instances to be translated.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Configs.CommandTranslations.Accept">
+            <summary>
+            Gets or sets a configurable instance of the <see cref="T:ScpSwap.Commands.Accept"/> command.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Configs.CommandTranslations.Cancel">
+            <summary>
+            Gets or sets a configurable instance of the <see cref="T:ScpSwap.Commands.Cancel"/> command.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Configs.CommandTranslations.Decline">
+            <summary>
+            Gets or sets a configurable instance of the <see cref="T:ScpSwap.Commands.Decline"/> command.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Configs.CommandTranslations.List">
+            <summary>
+            Gets or sets a configurable instance of the <see cref="T:ScpSwap.Commands.List"/> command.
+            </summary>
+        </member>
+        <member name="T:ScpSwap.EventHandlers">
+            <summary>
+            Handles events derived from <see cref="N:Exiled.Events.Handlers"/>.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.EventHandlers.#ctor(ScpSwap.Plugin)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScpSwap.EventHandlers"/> class.
+            </summary>
+            <param name="plugin">An instance of the <see cref="T:ScpSwap.Plugin"/> class.</param>
+        </member>
+        <member name="M:ScpSwap.EventHandlers.OnChangingRole(Exiled.Events.EventArgs.Player.ChangingRoleEventArgs)">
+            <inheritdoc cref="M:Exiled.Events.Handlers.Server.OnRoundStarted"/>
+        </member>
+        <member name="M:ScpSwap.EventHandlers.OnReloadedConfigs">
+            <inheritdoc cref="M:Exiled.Events.Handlers.Server.OnReloadedConfigs"/>
+        </member>
+        <member name="M:ScpSwap.EventHandlers.OnRestartingRound">
+            <inheritdoc cref="M:Exiled.Events.Handlers.Server.OnRestartingRound"/>
+        </member>
+        <member name="M:ScpSwap.EventHandlers.OnWaitingForPlayers">
+            <inheritdoc cref="M:Exiled.Events.Handlers.Server.OnWaitingForPlayers"/>
+        </member>
+        <member name="T:ScpSwap.Models.ConsoleMessage">
+            <summary>
+            Container to make translations for console messages more fun.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.ConsoleMessage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScpSwap.Models.ConsoleMessage"/> class.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.ConsoleMessage.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScpSwap.Models.ConsoleMessage"/> class.
+            </summary>
+            <param name="message"><inheritdoc cref="P:ScpSwap.Models.ConsoleMessage.Message"/></param>
+            <param name="color"><inheritdoc cref="P:ScpSwap.Models.ConsoleMessage.Color"/></param>
+        </member>
+        <member name="P:ScpSwap.Models.ConsoleMessage.Message">
+            <summary>
+            Gets or sets the message to send.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Models.ConsoleMessage.Color">
+            <summary>
+            Gets or sets the color to use.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.ConsoleMessage.SendTo(Exiled.API.Features.Player)">
+            <summary>
+            Sends the message to a given player.
+            </summary>
+            <param name="player">The player to send the message to.</param>
+        </member>
+        <member name="T:ScpSwap.Models.CustomSwap">
+            <summary>
+            A container to aid in the swapping of custom classes.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.CustomSwap.#ctor(System.String,System.Action{Exiled.API.Features.Player},System.Func{Exiled.API.Features.Player,System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScpSwap.Models.CustomSwap"/> class.
+            </summary>
+            <param name="name"><inheritdoc cref="P:ScpSwap.Models.CustomSwap.Name"/></param>
+            <param name="spawnMethod"><inheritdoc cref="P:ScpSwap.Models.CustomSwap.SpawnMethod"/></param>
+            <param name="verificationMethod"><inheritdoc cref="P:ScpSwap.Models.CustomSwap.VerificationMethod"/></param>
+        </member>
+        <member name="P:ScpSwap.Models.CustomSwap.Registered">
+            <summary>
+            Gets a <see cref="T:System.Collections.Generic.List`1"/> of all created <see cref="T:ScpSwap.Models.CustomSwap"/> instances.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Models.CustomSwap.Name">
+            <summary>
+            Gets the identifying name of the swappable class.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Models.CustomSwap.SpawnMethod">
+            <summary>
+            Gets the method to spawn the custom class.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Models.CustomSwap.VerificationMethod">
+            <summary>
+            Gets the method to check if a player is the custom class.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.CustomSwap.TryRegister">
+            <summary>
+            Attempts to register a <see cref="T:ScpSwap.Models.CustomSwap"/>.
+            </summary>
+            <returns>A value indicating whether the <see cref="T:ScpSwap.Models.CustomSwap"/> registered successfully.</returns>
+        </member>
+        <member name="M:ScpSwap.Models.CustomSwap.TryUnregister">
+            <summary>
+            Attempts to unregister a <see cref="T:ScpSwap.Models.CustomSwap"/>.
+            </summary>
+            <returns>A value indicating whether the <see cref="T:ScpSwap.Models.CustomSwap"/> registered successfully.</returns>
+        </member>
+        <member name="T:ScpSwap.Models.Swap">
+            <summary>
+            Handles the swapping of players.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Models.Swap.Sender">
+            <summary>
+            Gets the sender of the swap request.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Models.Swap.Receiver">
+            <summary>
+            Gets the person who was sent the swap request.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.FromSender(Exiled.API.Features.Player)">
+            <summary>
+            Gets a swap request based on the sender.
+            </summary>
+            <param name="player">The sender of the request.</param>
+            <returns>The sent swap request or null if one isn't found.</returns>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.FromReceiver(Exiled.API.Features.Player)">
+            <summary>
+            Gets a swap request based on the receiver.
+            </summary>
+            <param name="player">The receiver of the request.</param>
+            <returns>The sent swap request or null if one isn't found.</returns>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.Send(Exiled.API.Features.Player,Exiled.API.Features.Player)">
+            <summary>
+            Creates a new instance of the <see cref="T:ScpSwap.Models.Swap"/> class with the given Sender and Receiver.
+            </summary>
+            <param name="sender">The sender of the request.</param>
+            <param name="receiver">The receiver of the request.</param>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.Clear">
+            <summary>
+            Clears all active swap requests.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.Run">
+            <summary>
+            Performs the swap between the <see cref="P:ScpSwap.Models.Swap.Sender"/> and the <see cref="P:ScpSwap.Models.Swap.Receiver"/>.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.Cancel">
+            <summary>
+            Broadcasts the swap cancellation then destroys the swap.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.Swap.Decline">
+            <summary>
+            Broadcasts the swap decline then destroys the swap.
+            </summary>
+        </member>
+        <member name="T:ScpSwap.Models.SwapData">
+            <summary>
+            A container to swap data between players.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.Models.SwapData.#ctor(Exiled.API.Features.Player)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ScpSwap.Models.SwapData"/> class.
+            </summary>
+            <param name="player">The player to generate the data from.</param>
+        </member>
+        <member name="M:ScpSwap.Models.SwapData.Swap(Exiled.API.Features.Player)">
+            <summary>
+            Spawns a player with the contained swap data.
+            </summary>
+            <param name="player">The player to swap.</param>
+        </member>
+        <member name="T:ScpSwap.Plugin">
+            <summary>
+            The main plugin class.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Plugin.Instance">
+            <summary>
+            Gets the only existing instance of the <see cref="T:ScpSwap.Plugin"/> class.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Plugin.Author">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Plugin.Name">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Plugin.Prefix">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Plugin.RequiredExiledVersion">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Plugin.Version">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Plugin.OnEnabled">
+            <inheritdoc />
+        </member>
+        <member name="M:ScpSwap.Plugin.OnDisabled">
+            <inheritdoc />
+        </member>
+        <member name="T:ScpSwap.Translation">
+            <inheritdoc />
+        </member>
+        <member name="P:ScpSwap.Translation.TranslatableSwaps">
+            <summary>
+            Gets or sets a collection of custom names with their correlating <see cref="T:PlayerRoles.RoleTypeId"/>.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.StartMessage">
+            <summary>
+            Gets or sets the message to be displayed to all Scp subjects at the start of the round.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.RequestBroadcast">
+            <summary>
+            Gets or sets the broadcast to display to the receiver of a swap request.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.RequestConsoleMessage">
+            <summary>
+            Gets or sets the console message to send to the receiver of a swap request.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.SwapSuccessful">
+            <summary>
+            Gets or sets the console message to send to players when the swap succeeds.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.TimeoutReceiver">
+            <summary>
+            Gets or sets the console message to send to the receiver of a swap request that has timed out.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.TimeoutSender">
+            <summary>
+            Gets or sets the console message to send to the sender of a swap request that has timed out.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.Translation.CommandTranslations">
+            <summary>
+            Gets or sets the various command instances to be translated.
+            </summary>
+        </member>
+        <member name="T:ScpSwap.ValidSwaps">
+            <summary>
+            Handles queries that expose the names of swappable classes and config blacklists.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.ValidSwaps.Names">
+            <summary>
+            Gets a collection of all available swap names.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.ValidSwaps.CustomSwaps">
+            <summary>
+            Gets a collection of all available custom swaps.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.ValidSwaps.DefaultSwaps">
+            <summary>
+            Gets a collection of all default swaps.
+            </summary>
+        </member>
+        <member name="P:ScpSwap.ValidSwaps.TranslatableSwaps">
+            <summary>
+            Gets a collection of all translatable swaps.
+            </summary>
+        </member>
+        <member name="M:ScpSwap.ValidSwaps.Get(System.String)">
+            <summary>
+            Attempts to get a <see cref="T:PlayerRoles.RoleTypeId"/> from <see cref="P:ScpSwap.Translation.TranslatableSwaps"/> or from directly parsing a request.
+            </summary>
+            <param name="request">The query to get the <see cref="T:PlayerRoles.RoleTypeId"/>.</param>
+            <returns>The found <see cref="T:PlayerRoles.RoleTypeId"/>.</returns>
+        </member>
+        <member name="M:ScpSwap.ValidSwaps.GetCustom(System.String)">
+            <summary>
+            Returns a <see cref="T:ScpSwap.Models.CustomSwap"/> with a matching name to the provided one.
+            </summary>
+            <param name="name">The name to search for.</param>
+            <returns>The found <see cref="T:ScpSwap.Models.CustomSwap"/> or null if one is not found.</returns>
+        </member>
+        <member name="M:ScpSwap.ValidSwaps.GetCustom(Exiled.API.Features.Player)">
+            <summary>
+            Checks a <see cref="T:Exiled.API.Features.Player"/> to see if they have a custom class.
+            </summary>
+            <param name="player">The <see cref="T:Exiled.API.Features.Player"/> to check.</param>
+            <returns>The found <see cref="T:ScpSwap.Models.CustomSwap"/> or null if one is not found.</returns>
+        </member>
+        <member name="M:ScpSwap.ValidSwaps.Refresh">
+            <summary>
+            Clears and adds all available names of roles to swap to the cache.
+            </summary>
+        </member>
+    </members>
+</doc>

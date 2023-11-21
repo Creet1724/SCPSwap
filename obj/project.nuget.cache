@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LW776L/Hmqa31qgyF6itGjg4KI2NKMr9482GoBPP3ai2fKpWkcs6eQJb+Vv5IOwaRnRkInQOtNwo2xi3Jo1SiA==",
+  "success": true,
+  "projectFilePath": "D:\\Files\\Dev\\Repos\\SCPSwap\\ScpSwap\\ScpSwap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Creet1724\\.nuget\\packages\\exiled\\8.3.6\\exiled.8.3.6.nupkg.sha512",
+    "C:\\Users\\Creet1724\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

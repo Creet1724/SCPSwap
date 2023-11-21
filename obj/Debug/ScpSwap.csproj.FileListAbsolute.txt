@@ -1,0 +1,16 @@
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\ScpSwap.dll
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\ScpSwap.pdb
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\ScpSwap.xml
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\Mirror.dll
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\UnityEngine.CoreModule.dll
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\bin\Debug\UnityEngine.PhysicsModule.dll
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.csproj.AssemblyReference.cache
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.AssemblyInfoInputs.cache
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.AssemblyInfo.cs
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.csproj.CoreCompileInputs.cache
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.csproj.CopyComplete
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.dll
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.xml
+D:\Files\Dev\Repos\SCPSwap\ScpSwap\obj\Debug\ScpSwap.pdb
